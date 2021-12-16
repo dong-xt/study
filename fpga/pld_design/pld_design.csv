@@ -1,0 +1,76 @@
+# Copyright (C) 2018  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details.
+
+# Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+# File: D:\code\verilog\pld_design\src\pld_design.csv
+# Generated on: Thu Dec 16 00:25:02 2021
+
+# Note: The column header names should not be changed if you wish to import this .csv file into the Quartus Prime software.
+
+To,Direction,Location,I/O Bank,VREF Group,Fitter Location,I/O Standard,Reserved,Current Strength,Slew Rate,Differential Pair,Strict Preservation
+alarm_led,Output,PIN_F17,7,B7_N2,PIN_AH19,,,,,,
+alarm_set_led,Output,PIN_G21,7,B7_N1,PIN_AD15,,,,,,
+alarm_sw,Input,PIN_AB28,5,B5_N1,PIN_AC17,,,,,,
+alarm_sw_led,Output,PIN_G19,7,B7_N2,PIN_AH17,,,,,,
+altera_reserved_tck,Input,,,,PIN_P5,,,,,,
+altera_reserved_tdi,Input,,,,PIN_P7,,,,,,
+altera_reserved_tdo,Output,,,,PIN_P6,,,,,,
+altera_reserved_tms,Input,,,,PIN_P8,,,,,,
+clk_50m,Input,PIN_Y2,2,B2_N0,PIN_Y2,2.5 V,,,,,
+hex_hour_h[6],Output,PIN_AH18,4,B4_N2,PIN_AD11,,,,,,
+hex_hour_h[5],Output,PIN_AF18,4,B4_N1,PIN_AE14,,,,,,
+hex_hour_h[4],Output,PIN_AG19,4,B4_N2,PIN_AG22,,,,,,
+hex_hour_h[3],Output,PIN_AH19,4,B4_N2,PIN_AF19,,,,,,
+hex_hour_h[2],Output,PIN_AB18,4,B4_N0,PIN_AA12,,,,,,
+hex_hour_h[1],Output,PIN_AC18,4,B4_N1,PIN_AB15,,,,,,
+hex_hour_h[0],Output,PIN_AD18,4,B4_N1,PIN_AD12,,,,,,
+hex_hour_l[6],Output,PIN_AE18,4,B4_N2,PIN_AF15,,,,,,
+hex_hour_l[5],Output,PIN_AF19,4,B4_N1,PIN_AH18,,,,,,
+hex_hour_l[4],Output,PIN_AE19,4,B4_N1,PIN_AG17,,,,,,
+hex_hour_l[3],Output,PIN_AH21,4,B4_N2,PIN_AH12,,,,,,
+hex_hour_l[2],Output,PIN_AG21,4,B4_N2,PIN_AC15,,,,,,
+hex_hour_l[1],Output,PIN_AA19,4,B4_N0,PIN_AB14,,,,,,
+hex_hour_l[0],Output,PIN_AB19,4,B4_N0,PIN_AA14,,,,,,
+hex_minute_h[6],Output,PIN_Y19,4,B4_N0,PIN_AA15,,,,,,
+hex_minute_h[5],Output,PIN_AF23,4,B4_N0,PIN_AA13,,,,,,
+hex_minute_h[4],Output,PIN_AD24,4,B4_N0,PIN_AF16,,,,,,
+hex_minute_h[3],Output,PIN_AA21,4,B4_N0,PIN_AB16,,,,,,
+hex_minute_h[2],Output,PIN_AB20,4,B4_N0,PIN_AB13,,,,,,
+hex_minute_h[1],Output,PIN_U21,5,B5_N0,PIN_AG12,,,,,,
+hex_minute_h[0],Output,PIN_V21,5,B5_N1,PIN_AC14,,,,,,
+hex_minute_l[6],Output,PIN_W28,5,B5_N1,PIN_AA16,,,,,,
+hex_minute_l[5],Output,PIN_W27,5,B5_N1,PIN_AF12,,,,,,
+hex_minute_l[4],Output,PIN_Y26,5,B5_N1,PIN_AH11,,,,,,
+hex_minute_l[3],Output,PIN_W26,5,B5_N1,PIN_AG11,,,,,,
+hex_minute_l[2],Output,PIN_Y25,5,B5_N1,PIN_AB12,,,,,,
+hex_minute_l[1],Output,PIN_AA26,5,B5_N1,PIN_Y12,,,,,,
+hex_minute_l[0],Output,PIN_AA25,5,B5_N1,PIN_AF13,,,,,,
+hex_second_h[6],Output,PIN_U24,5,B5_N0,PIN_Y14,,,,,,
+hex_second_h[5],Output,PIN_U23,5,B5_N1,PIN_Y13,,,,,,
+hex_second_h[4],Output,PIN_W25,5,B5_N1,PIN_AH21,,,,,,
+hex_second_h[3],Output,PIN_W22,5,B5_N0,PIN_AE13,,,,,,
+hex_second_h[2],Output,PIN_W21,5,B5_N1,PIN_AD17,,,,,,
+hex_second_h[1],Output,PIN_Y22,5,B5_N0,PIN_AH23,,,,,,
+hex_second_h[0],Output,PIN_M24,6,B6_N2,PIN_AD14,,,,,,
+hex_second_l[6],Output,PIN_H22,6,B6_N0,PIN_AF14,,,,,,
+hex_second_l[5],Output,PIN_J22,6,B6_N0,PIN_AC11,,,,,,
+hex_second_l[4],Output,PIN_L25,6,B6_N1,PIN_AE16,,,,,,
+hex_second_l[3],Output,PIN_L26,6,B6_N1,PIN_AG10,,,,,,
+hex_second_l[2],Output,PIN_E17,7,B7_N2,PIN_AC12,,,,,,
+hex_second_l[1],Output,PIN_F22,7,B7_N0,PIN_Y15,,,,,,
+hex_second_l[0],Output,PIN_G18,7,B7_N2,PIN_AE11,,,,,,
+pb0,Input,PIN_M23,6,B6_N2,PIN_J28,,,,,,
+pb1,Input,PIN_M21,6,B6_N1,PIN_AE15,,,,,,
+pb2,Input,PIN_N21,6,B6_N2,PIN_J27,,,,,,
+pb3,Input,PIN_R24,5,B5_N0,PIN_AE17,,,,,,
