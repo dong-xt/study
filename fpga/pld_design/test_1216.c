@@ -149,6 +149,13 @@ int getPB3()
 	  return 0;
 }
 
+int a = 1;
+a = a << 1;
+if(a == x)
+{
+	a = 1;
+}
+
 int main()
 {
   printf("Hello from Nios II!\n");
