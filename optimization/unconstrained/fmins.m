@@ -1,17 +1,18 @@
-function [x,y] = fmins(n1,m1,no,x0,a0,e) %多维搜索函数
+function [x,y,t] = fmins(n1,m1,no,x0,a0,e) %多维搜索函数
 
+t=0;
 if(n1==1) %梯度法
     x2=x0; x1=x2-e;
     while(norm(x2-x1)>=e)
-        x1=x2; d=-g(no,x1);
-        x2=fmin(m1,no,x1,d,a0,e);
+        x1=x2; d=-g(no,x1); 
+        x2=fmin(m1,no,x1,d,a0,e);t=t+1;
     end
     x=x2;y=f(no,x2,1,0);
 elseif(n1==2) %阻尼牛顿法
     x2=x0; x1=x2-e;
     while(norm(x2-x1)>=e)
         x1=x2; df = g(no,x1); df2 = g2(no,x1); df2v = inv(df2); d=-df2v * df;
-        x2=fmin(m1,no,x1,d,a0,e);
+        x2=fmin(m1,no,x1,d,a0,e);t=t+1;
     end
     x=x2;y=f(no,x2,1,0);
 elseif(n1==3) %共轭梯度法
@@ -26,6 +27,7 @@ elseif(n1==3) %共轭梯度法
             d2=-ga+b*d1;
             k=k+1;
         end
+        t=t+1;
     end
     x=x2;y=f(no,x2,1,0);
 elseif(n1==4) %鲍威尔法
@@ -52,6 +54,7 @@ elseif(n1==4) %鲍威尔法
        else
            x00=x10;
        end
+       t=t+1;
     end
 elseif(n1==5) %变尺度法-BFGS
     x2=x0;x1=x2-e;G2=g(no,x0);H=[1,0;0,1];k=0;
@@ -64,6 +67,7 @@ elseif(n1==5) %变尺度法-BFGS
             E=((1+yk.'*H*yk/(sk.'*yk))*(sk*sk.')-H*yk*sk.'-sk*yk.'*H)/(sk.'*yk);
             H=H+E;k=k+1;
         end
+        t=t+1;
     end
     x=x2;y=f(no,x2,1,0);
 elseif(n1==6) %单纯形法
@@ -113,6 +117,7 @@ elseif(n1==6) %单纯形法
         else
             x1=xl;x2=xh;x3=xg;y1=yl;y2=yh;y3=yg;
         end
+        t=t+1;
     end
     x=xl;y=f(no,x,1,0);
 end
