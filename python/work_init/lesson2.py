@@ -35,6 +35,9 @@ print l1[3:]
 print l1 * 2
 print l1 + l2
 print l2[0], l1[4], l1[0], l1[2:4]
+l2.append('addition')
+del l2[1]
+print l2
 
 # 元组:类似于列表 read only
 t1 = (5, "hundred", 'm')
@@ -53,8 +56,14 @@ print d1[2]
 print d1
 print d2.keys()
 print d2.values()
+del d2["id"]
+print d2
 
-
+# 强制类型转换
+num = 15
+print "数字", num
+s = str(num)
+print "字符串" + s
 
 
 
