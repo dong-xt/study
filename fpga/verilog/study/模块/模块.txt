@@ -1,0 +1,6 @@
+mul_module 乘法器模块
+mul2port 两路乘法器
+adder 二输入加法器
+cnt_module 计数器
+D_trigger3 3串联D触发器
+pluse_module 固定宽度脉冲产生

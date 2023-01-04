@@ -1,0 +1,31 @@
+Prj1 乘法器模块
+Prj2 二路乘法器
+Prj3 计数器
+Prj4 电路转代码测试1
+Prj5 加法器
+Prj6 三个D触发器串联
+Prj7 电路转代码测试2
+Prj8 改错 1
+Prj9 改错 2
+Prj10 改错 3
+Prj11 固定宽度脉冲产生器
+
+Prj12----------18   计数器题目
+Prj12-runled 流水灯 （11亮1灭）
+Prj13-trafficled 循环 绿 黄 红    东1s南2s西3s北4s
+Prj14-trafficled2 南北向交通灯 初始东西绿 南北红   绿10s——黄5s——红15s——绿    计数器复用
+Prj15-secondcnt   一个数码管 秒表计数  0---9
+Prj16-randomcnt  一个数码滚 1s间隔计数0246813579
+Prj17-circleseg     八个数码管 第0个显示0 1s  第1个显示1 2s  。。。。。第7个显示7 8s  每次只有一个显示
+Prj18-ctrltimer     可暂停秒表  时：分：秒计时   按键S1控制暂停继续
+
+Prj19----------22       状态机题目
+Prj19-statebase 基础状态机 en=1时  IDEL->S1->S2->IDEL
+Prj20-statejump 状态机+计数器 IDEL-(en=1)->S1-(count 5 clock)->S2-(count 7 clock)->IDEL
+Prj21-statecounter 状态机+计数器 IDEL-(en=1)->S1-(累计count 5 en=1 clock)->S2-(累计count 7 en=1 clock)->IDEL
+Prj22-statecnten 状态机+计数器 IDEL-(en=1)->S1-(count 5 en↑)->S2-(count 7 en↑)->IDEL
+Prj23-statepack 状态机包文检测  见题目
+
+
+
+
